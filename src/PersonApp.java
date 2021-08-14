@@ -8,5 +8,12 @@ public class PersonApp {
         System.out.println(Person.name);
         System.out.println(Person.address);
         System.out.println(Person.country);
+
+        Person.sayHello("Kawan");
+
+        var Person2 = new Person();
+
+        Person2.name = "Fajar";
+        Person2.sayHello("Fahrul");
     }
 }
