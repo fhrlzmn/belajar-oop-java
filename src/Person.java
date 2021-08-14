@@ -10,6 +10,13 @@ public class Person {
         name = paramName;
         address = paramAdress;
     }
+    // Constructor Overloading
+    Person(String paramName) {
+        this(paramName,null);
+    }
+    Person() {
+        this(null);
+    }
 
     // Method
     public void sayHello(String paramName) {

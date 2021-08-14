@@ -1,21 +1,37 @@
 public class PersonApp {
     public static void main(String[] args) {
         // Membuat Object Person dari Class Person (Sekarang menggunakan Constructor)
-        var Person = new Person("Fahrul", "Bandung");
+        var person = new Person("Fahrul", "Bandung");
 
-        System.out.println(Person.name);
-        System.out.println(Person.address);
-        System.out.println(Person.country);
+        System.out.println(person.name);
+        System.out.println(person.address);
+        System.out.println(person.country);
 
         // Pemanggilan Method
-        Person.sayHello("Kawan");
-        Person.setAddress();
+        person.sayHello("Kawan");
+        person.setAddress();
 
         // Object Person2 (Sekarang menggunakan Constructor)
-        var Person2 = new Person("Fajar", "Surabaya");
+        var person2 = new Person("Fajar", "Surabaya");
 
-        //Pemanggilan Method
-        Person2.sayHello("Fahrul");
-        Person2.setAddress();
+        // Pemanggilan Method
+        person2.sayHello("Fahrul");
+        person2.setAddress();
+
+        // Implementasi Constructor Overloading
+        var personA = new Person("Andi", "Jakarta");
+        personA.sayHello("Kawan");
+        personA.setAddress();
+
+        var personB = new Person("Joko");
+        personB.address = "Bekasi";
+        personB.sayHello("Kawan");
+        personB.setAddress();
+
+        var personC = new Person();
+        personC.name = "Yusril";
+        personC.address = "Yogyakarta";
+        personC.sayHello("Kawan");
+        personC.setAddress();
     }
 }
