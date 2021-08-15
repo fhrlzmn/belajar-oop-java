@@ -5,7 +5,7 @@ public class AdminApp {
         admin.sayHello("Kawan");
 
         var userOne = new UserOne();
-        userOne.name = "User 1";
-        userOne.sayHello("Fahrul");
+        userOne.name = "Fahrul";
+        userOne.sayHello("Kawan");
     }
 }
