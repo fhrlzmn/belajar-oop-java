@@ -22,6 +22,15 @@ public class HeadMasterApp {
 
     // Method Polymorphism
     static void sayHello(HeadMaster headMaster) {
-        System.out.println("Hello " + headMaster.name);
+        // Pengecekan Tipe Data (Check) menggunakan instanceof
+        if (headMaster instanceof Teacher) {
+            Teacher teacher = (Teacher) headMaster; // Konversi tipe data (casts)
+            System.out.println("Hello " + teacher.name);
+        } else if (headMaster instanceof Operator) {
+            Operator operator = (Operator) headMaster; // Konversi tipe data (casts)
+            System.out.println("Hello " + operator.name);
+        } else {
+            System.out.println("Hello " + headMaster.name);
+        }
     }
 }
